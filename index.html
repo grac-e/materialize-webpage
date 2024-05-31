@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>materialize-webpage</title>
+    <!-- <link rel="stylesheet" href="materialize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Handlebars.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+
+    <style>
+        body {
+            background-color: #E7C6FF;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: lightgray;
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        @media (max-width: 960px) {
+            .mid-img {
+                float: right !important;
+                /* order: 0 !important; */
+            }
+        }
+
+        /* .col s12 m6 img {
+            border: 1px solid #333447;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8">
+                <h1>{{user.fullName}} <i class="fas fa-camera"></i></h1>
+            </div>
+            <div class="col s12 m4"><img src="{{user.photo}}" alt="Grace" width="360" height="350"></div>
+        </div>
+
+
+
+        <h2>Which city? <i class="fas fa-city"></i></h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="{{city.photo}}" alt=Busan width="400">
+            </div>
+            <div class="col s12 m6">{{city.description}}
+            </div>
+        </div>
+
+        <h2>A foreign language <i class="fas fa-language"></i></h2>
+        <div class="row">
+            {{foreignLanguage.language}}
+        </div>
+        <table border="1" class="table">
+            <tr>
+                <th>Korean</th>
+                <th>English</th>
+            </tr>
+            {{#each foreignLanguage.phrases}}
+            <tr>
+                <td>{{foreignLanguage}}</td>
+                <td>{{englishPhrase}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+        <h2>Favourite subjects <i class="fas fa-book-open"></i></h2>
+        I completed a BSc. Biological Sciences and Genetics qualification at the University of KwaZulu-Natal(UKZN). My
+        favourite subjects were:
+        <div class="row">
+            {{#each favouriteSubjects}}
+            <div class="col s12 m4">
+                <h4>{{name}}</h4>
+                <img src="{{description}}" width="200" height="120" style="border: 1px solid #333447;">
+            </div>
+            {{/each}}
+
+        </div>
+
+        <h2>Historical places in my city <i class="fas fa-landmark"></i></h2>
+        <div class="row">
+            <div class="col s12 l4">
+                <h4>{{historicalPlaces.[0].name}}</h4>
+
+                <div class="row">
+                    <div class="col s6  l6">
+                        <ul>
+                            <li>{{historicalPlaces.[0].description}}</li>
+                        </ul>
+                    </div>
+                    <div class="col s6 l6">
+                        <img src="{{historicalPlaces.[0].photo}}" width="150" height="100" style="border: 1px solid #333447;">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col s12 l4">
+                <h4>{{historicalPlaces.[1].name}}</h4>
+
+                <div class="row">
+                    <div class="col s6 l6 mid-img">
+                        <ul>
+                            <li>{{historicalPlaces.[1].description}}</li>
+                        </ul>
+                    </div>
+                    <div class="col s6 l6">
+                        <img src="{{historicalPlaces.[1].photo}}" width="150" height="100" style="border: 1px solid #333447;">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col s12 l4">
+                <h4>{{historicalPlaces.[2].name}}</h4>
+
+                <div class="row">
+                    <div class="col s6 l6">
+                        <ul>
+                            <li>{{historicalPlaces.[2].description}}</li>
+                        </ul>
+                    </div>
+                    <div class="col s6 l6">
+                        <img src="{{historicalPlaces.[2].photo}}" width="150" height="100" style="border: 1px solid #333447;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

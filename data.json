@@ -1,0 +1,63 @@
+{
+    "user": {
+        "fullName": "Grace Omowunmi Adelowotan",
+        "photo": "./pics/myimage.png"
+    },
+    "city": {
+        "name": "Busan",
+        "photo": "./pics/Busan.png",
+        "description": "I would like to visit Busan city in South Korea because the Korean culture is of interest to me. Having actively participated in Korean culture initiatives since I was a teenager, it has been my dream to visit many parts of South Korea but especially Busan, which is renowned for its stunning beaches and natural landscapes. It is also rich in history and culture, and hosts a variety of festivals and events throughout the year, ranging from film to music. I wish to visit with my best friend to enjoy the delicious cuisine, culture, and fun activities that the city has to offer."
+    },
+    "foreignLanguage": {
+        "language": "I would like to learn to speak Korean at a native level because I enjoy Korean media content and would like to be able to read, understand and speak the language fluently.",
+        "phrases": [
+            {
+                "englishPhrase": "Hello!",
+                "foreignLanguage": "Annyeonghaseyo! (안녕하세요!)"
+            },
+            {
+                "englishPhrase": "Thank you.",
+                "foreignLanguage": "Kamsahamnida. (감사합니다.)"
+            },
+            {
+                "englishPhrase": "Excuse me!",
+                "foreignLanguage": "Jeogiyo! (저기요!)"
+            },
+            {
+                "englishPhrase": "I love you.",
+                "foreignLanguage": "Saranghaeyo. (사랑해요.)"
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Molecular Diagnostics.",
+            "description": "./pics/MolDiag.jpg"
+        },
+        {
+            "name": "Applied Biotechnology.",
+            "description": "./pics/AppliedBiotechnology.jpg"
+        },
+        {
+            "name": "Evolution & Systematics.",
+            "description": "./pics/EvolnSys.jpg"
+        }
+    ],
+    "historicalPlaces": [
+        {
+            "name": "1. Constitution Hill",
+            "description": "No, it is not an actual hill as the name would imply. It used to be a prison where many political activists were held. It is now known as the Constitutional Court.",
+            "photo": "./pics/ConstHill.png"
+        },
+        {
+            "name": "2. Mandela House",
+            "description": "It was Nelson Mandela's first house where he lived with his first then second wife before he was imprisoned. It is now a museum where visitors can get a more personal look into the life of Mandela and his family during their time there. It is located in Soweto, which is historically significant in the resistance against racial segregation and discrimination.",
+            "photo": "./pics/MandelaHouse.png"
+        },
+        {
+            "name": "3. Apartheid Museum",
+            "description": "The museum offers interactive exhibits that allows visitors to engage more interactively with the history of apartheid. The exhibits take visitors on a chronological journey through South Africa's history. They feature stories of activists, political leaders, and even ordinary citizens who challenged apartheid and advocated for equality.",
+            "photo": "./pics/ApartheidMuseum.png"
+        }
+    ]
+}
