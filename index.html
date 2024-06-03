@@ -50,6 +50,16 @@
             }
         }
 
+        .hist img {
+            width: 100%;
+        }
+
+        /* @media (max-width:) */
+
+        /* .col s12 l4 {
+            padding-right: 5%;
+        } */
+
         /* .col s12 m6 img {
             border: 1px solid #333447;
         } */
@@ -106,56 +116,61 @@
 
         </div>
 
-        <h2>Historical places in my city <i class="fas fa-landmark"></i></h2>
-        <div class="row">
-            <div class="col s12 l4">
-                <h4>{{historicalPlaces.[0].name}}</h4>
+        <div class="hist">
+            <h2>Historical places in my city <i class="fas fa-landmark"></i></h2>
+            <div class="row">
+                <div class="col s12 m12 l4">
+                    <h4>{{historicalPlaces.[0].name}}</h4>
 
-                <div class="row">
-                    <div class="col s6  l6">
-                        <ul>
-                            <li>{{historicalPlaces.[0].description}}</li>
-                        </ul>
-                    </div>
-                    <div class="col s6 l6">
-                        <img src="{{historicalPlaces.[0].photo}}" width="150" height="100" style="border: 1px solid #333447;">
-                    </div>
+                    <div class="row">
+                        <div class="col s6 l6">
+                            <ul>
+                                <li>{{historicalPlaces.[0].description}}</li>
+                            </ul>
+                        </div>
+                        <div class="col s6 l6">
+                            <img src="{{historicalPlaces.[0].photo}}" width="150" height="100"
+                                style="border: 1px solid #333447;">
+                        </div>
 
-                </div>
-            </div>
-
-
-            <div class="col s12 l4">
-                <h4>{{historicalPlaces.[1].name}}</h4>
-
-                <div class="row">
-                    <div class="col s6 l6 mid-img">
-                        <ul>
-                            <li>{{historicalPlaces.[1].description}}</li>
-                        </ul>
-                    </div>
-                    <div class="col s6 l6">
-                        <img src="{{historicalPlaces.[1].photo}}" width="150" height="100" style="border: 1px solid #333447;">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col s12 l4">
-                <h4>{{historicalPlaces.[2].name}}</h4>
-
-                <div class="row">
-                    <div class="col s6 l6">
-                        <ul>
-                            <li>{{historicalPlaces.[2].description}}</li>
-                        </ul>
-                    </div>
-                    <div class="col s6 l6">
-                        <img src="{{historicalPlaces.[2].photo}}" width="150" height="100" style="border: 1px solid #333447;">
                     </div>
                 </div>
-            </div>
 
+
+                <div class="col s12 m12 l4">
+                    <h4>{{historicalPlaces.[1].name}}</h4>
+
+                    <div class="row">
+                        <div class="col s6 l6 mid-img">
+                            <ul>
+                                <li>{{historicalPlaces.[1].description}}</li>
+                            </ul>
+                        </div>
+                        <div class="col s6 l6">
+                            <img src="{{historicalPlaces.[1].photo}}" width="150" height="100"
+                                style="border: 1px solid #333447;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <h4>{{historicalPlaces.[2].name}}</h4>
+
+                    <div class="row">
+                        <div class="col s6 l6">
+                            <ul>
+                                <li>{{historicalPlaces.[2].description}}</li>
+                            </ul>
+                        </div>
+                        <div class="col s6 l6">
+                            <img src="{{historicalPlaces.[2].photo}}" width="150" height="100"
+                                style="border: 1px solid #333447;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
